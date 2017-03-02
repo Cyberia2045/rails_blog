@@ -1,0 +1,12 @@
+<div class = "post_container">
+
+<p><%= link_to "Delete #{@user.first_name}", @user, method: :delete %></p>
+<p><%= link_to "Edit #{@user.first_name}", edit_user_path %></p>
+
+<p><%= link_to "Make a Post", "/posts/new" %></p>
+
+<h1 class="pm_general"><%= @user.first_name %></h1>
+
+</div>
+
+<p><%= image_tag @user.avatar.url(:medium) %></p>

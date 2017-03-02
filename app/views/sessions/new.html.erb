@@ -1,0 +1,19 @@
+<div class = "form_div">
+
+<%= form_tag("/sign-in") do %>
+	<%= label_tag :email %>
+	<%= text_field_tag :email %>
+
+	<br>
+	<br>
+
+	<%= label_tag :password %>
+	<%= password_field_tag :password %>
+
+	<br>
+	<br>
+
+	<%= submit_tag "Open the Gates!", :class => "submit" %>
+<% end %>
+
+</div>

@@ -1,0 +1,18 @@
+<%= form_for(@user, html: { multipart: true, class: "form_div" }) do |f| %>
+	<%= f.label :first_name, :class => "name_label" %>
+	<%= f.text_field :first_name, :class => "user_name"%>
+	<br>
+	<br>
+	<%= f.label :email, :class => "email_label" %>
+	<%= f.text_field :email, :class => "user_email" %>
+	<br>
+	<br>
+	<%= f.label :password, :class => "password_label" %>
+	<%= f.password_field :password, :class => "user_password" %>
+	<br>
+	<br>
+	<%= f.file_field :avatar, :class => "user_avatar" %>
+	<br>
+	<br> 
+	<%= f.submit :class => "user_submit" %>
+<% end %>

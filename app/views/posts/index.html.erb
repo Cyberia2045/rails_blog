@@ -1,0 +1,9 @@
+<div class = "post_container">
+
+<h1 class="pm_general">The PostMaster General</h1>
+	<p class = "users"><%= link_to "All the Users", "/users" %></p>
+<% @posts.each do |post| %>
+	<li class= "post_list" ><%= link_to post.title, post %></li>
+<%end%>
+
+</div>

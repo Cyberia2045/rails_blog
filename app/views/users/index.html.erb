@@ -1,0 +1,10 @@
+<div class = "post_container">
+<h1 class="pm_general">All the Users</h1>
+
+<% @users.each do |user| %>
+	<li class = "post_list"><%= link_to user.first_name, user %></li>
+<%end%>
+
+<p class = "create_user"><%= link_to "Create a User", "/users/new" %></p>
+
+</div>

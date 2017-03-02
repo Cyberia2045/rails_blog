@@ -1,0 +1,15 @@
+<div class = "post_container">
+
+<h1 class = "pm_general" ><%= @post.title %></h1>
+
+<p><%= @post.body %></p>
+
+<div class = "edit_div">
+	<%= link_to "Edit |", edit_post_path(@post) %>
+	<%= link_to "| Delete", post_path(@post), method: :delete %>
+</div>
+
+<div class = "post_by" ><small>Posted by: <%= @post.try(:user).try(:email) || "anonymous" %></small></div>
+
+</div>
+

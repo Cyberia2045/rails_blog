@@ -1,0 +1,21 @@
+
+<div class="form_div">
+
+<%= form_for @post do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title, :class => "post_title" %>
+
+	<br>
+	<br>
+
+	<%= f.label :body %>
+	<%= f.text_area :body, :class => "post_body" %>
+
+	<br>
+	<br>
+
+	<%= f.submit :class => "post_submit" %>
+
+<% end %>
+
+</div>
