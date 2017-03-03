@@ -1,19 +1,22 @@
+<div class = "post_container">
+<h1>Sign In and Make a Post!</h1>
+</div>
+
 <div class = "form_div">
 
 <%= form_tag("/sign-in") do %>
-	<%= label_tag :email %>
-	<%= text_field_tag :email %>
-
+	<%= text_field_tag "email", nil, :placeholder => "Email" %>
 	<br>
 	<br>
-
-	<%= label_tag :password %>
-	<%= password_field_tag :password %>
-
+	<%= password_field_tag "password", nil, :placeholder => "Password" %>
 	<br>
 	<br>
-
 	<%= submit_tag "Open the Gates!", :class => "submit" %>
 <% end %>
 
 </div>
+
+<br>
+<br>
+
+<p><%= link_to "Create a Profile", "/users/new" %></p>
