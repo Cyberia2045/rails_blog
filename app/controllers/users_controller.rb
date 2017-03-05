@@ -32,7 +32,7 @@ class UsersController < ApplicationController
 
  		user.update_attributes(user_params)
 
- 		redirect_to :back
+ 		redirect_to user_path
 	end
 
 	def sign_in

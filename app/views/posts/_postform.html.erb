@@ -2,14 +2,12 @@
 <div class="form_div">
 
 <%= form_for @post do |f| %>
-	<%= f.label :title %>
-	<%= f.text_field :title, :class => "post_title" %>
+	<%= f.text_field :title, :class => "post_title", placeholder: "Post Title" %>
 
 	<br>
 	<br>
 
-	<%= f.label :body %>
-	<%= f.text_area :body, :class => "post_body" %>
+	<%= f.text_area :body, :class => "post_body", placeholder: "Write a Post!" %>
 
 	<br>
 	<br>

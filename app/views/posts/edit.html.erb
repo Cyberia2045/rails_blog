@@ -1,5 +1,6 @@
-<h1>Posts#edit</h1>
-<p>Find me in app/views/posts/edit.html.erb</p>
+<div class = "post_container">
+<h1><%= @post.title %></h1>
+</div>
 
 <% if @post.user_id == session[:user_id] %>
 
