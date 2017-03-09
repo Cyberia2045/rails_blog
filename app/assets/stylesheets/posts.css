@@ -43,8 +43,33 @@ p {
 
 .edit_div {
 	text-align: center;
-	padding-top:20px;
 }
+
+/*-------comments styling--------*/
+
+#comments {
+	text-align: center;
+	margin:0 auto;
+	padding:10px;
+	color: white;
+}
+
+.comment_display {
+	padding: 30px;
+}
+
+.comment {
+	font-size: 25px;
+}
+
+.comment_writer {
+	font-size: 12px;
+}
+
+
+
+
+
 
 
 
